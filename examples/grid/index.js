@@ -13,10 +13,10 @@ var fontFaceName = 'icons';
 var fontAwesome = cfs.file({
   name: fontFaceName,
   files: [
-    {url: 'node_modules/font-awesome/fonts/fontawesome-webfont.eot', format: 'eot'},
-    {url: 'node_modules/font-awesome/fonts/fontawesome-webfont.svg', format: 'svg'},
-    {url: 'node_modules/font-awesome/fonts/fontawesome-webfont.ttf', format: 'ttf'},
-    {url: 'node_modules/font-awesome/fonts/fontawesome-webfont.woff', format: 'woff'},
+    {url: 'grid/fonts/fontawesome-webfont.eot', format: 'eot'},
+    {url: 'grid/fonts/fontawesome-webfont.svg', format: 'svg'},
+    {url: 'grid/fonts/fontawesome-webfont.ttf', format: 'ttf'},
+    {url: 'grid/fonts/fontawesome-webfont.woff', format: 'woff'},
   ]
 });
 insertCss(fontAwesome);
