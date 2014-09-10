@@ -26,7 +26,7 @@ var shape = [5, 5];
 var numItems = shape[0] * shape[1];
 
 //transform font-awesome css file into JSON object
-var faCss = fs.readFileSync('node_modules/font-awesome/css/font-awesome.css').toString()
+var faCss = fs.readFileSync('node_modules/font-awesome/css/font-awesome.css').toString();
 var cssObj = CSSOM.parse(faCss);
 
 var icons = _.filter(cssObj.cssRules, function(obj) {
