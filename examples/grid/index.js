@@ -8,7 +8,7 @@ var fs = require('fs');
 var _ = require('lodash');
 var CSSOM = require("cssom");
 
-//insert font-face 'icons'
+//insert font-face 'icons'. Exexutes from examples root folder
 var fontFaceName = 'icons';
 var fontAwesome = cfs.file({
   name: fontFaceName,
@@ -21,6 +21,7 @@ var fontAwesome = cfs.file({
 });
 insertCss(fontAwesome);
 
+//set grid variables
 var shape = [5, 5];
 var numItems = shape[0] * shape[1];
 
@@ -45,12 +46,14 @@ icons = _.map(icons, function(obj) {
   }
 });
 
+//componentify
 icons = _.map(icons, function(iconObj) {
   return Icon({
     model: iconObj
   }).state;
 });
 
+//embed in grid
 var grid = Grid({
   model: new Ndarray(icons, shape),
   config: {}
