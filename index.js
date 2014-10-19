@@ -51,7 +51,7 @@ FontIcon.render = function (state, events) {
 
   RCSS.injectAll();
 
-  return h('div.iconDiv', { style: style.iconDiv }, [
+  return h('div.icon', { style: style.icon }, [
     h('span', {className: icon.className}),
     h('span.screen-reader-text', {
       style: screenReaderTextInlineStyle
