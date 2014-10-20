@@ -13,8 +13,10 @@ var FontIcon = function (options) {
   var config = options.config || {};
   var model = options.model || {};
   var style = options.style || {};
+  var className = options.className || {};
 
   var state = mercury.struct({
+    className: mercury.value(className),
     config: mercury.struct(config),
     model: mercury.struct(model),
     style: mercury.struct(style),
