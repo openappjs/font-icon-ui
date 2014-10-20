@@ -27,10 +27,10 @@ var FontIcon = function (options) {
 FontIcon.render = function (state, events) {
   var model = state.model || {};
   var style = state.style || {};
-  var className = state.className
+  var className = state.className;
 
   return h('div.icon', { style: style.icon }, [
-    h('span', {className: icon.className}),
+    h('span', {className: className}),
     h('span.screen-reader-text', {
       style: screenReaderTextInlineStyle
     }, model.screenReaderText )
